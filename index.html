@@ -18,13 +18,11 @@
         circles.push(newCircle);
         }
 
-    var animatedCircle = new Path.Circle(new Point(300, 300),100);
-    animatedCircle.fillColor = 'red';  
     function onFrame(event) {
         for (var i=0; i<circles.length; i++){
             circles[i].fillColor.hue += 1;
         }
-        animatedCircle.scale(.9);
+
     }     
 </script>
 <link rel="stylesheet" href="assets/css/circles.css">
